@@ -1,5 +1,4 @@
 import React, {useState, useEffect} from 'react';
-import { Button } from './Button';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 import { IoIosSettings } from "react-icons/io";
@@ -48,7 +47,7 @@ function Navbar() {
                 </Link>
               </li>
               <li className='nav-item'>
-                <Link className="nav-links">
+                <Link className="nav-links" onClick={closeMobileMenu}>
                   <IoIosSettings className="settings" />
                 </Link>
               </li>

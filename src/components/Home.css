@@ -9,7 +9,8 @@ p {
   text-decoration: none;
   cursor: pointer;          
   position: relative;
-  z-index: 9999;
+  margin-top: 20px;
+
 }
 
 .parent {
@@ -19,11 +20,24 @@ p {
   align-items: center;
 }
 
-.wrapper {
-  display: flex;
+.parent p {
   text-align: center;
-
 }
+.intro {
+  margin: auto;
+  width: 50%;
+}
+
+.wrapper {
+  position: fixed;
+  inset: 0;              /* top:0 right:0 bottom:0 left:0 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0,0,0,0.35); /* optional */
+  z-index: 9999;
+}
+
 .popUp {
   display: flex;
   flex-direction: column;
@@ -32,6 +46,11 @@ p {
 h2 {
   display: block;
 }
-.closeButton:hover {
+
+button:hover {
   cursor: pointer;
+}
+
+.closeButton {
+  width: 50px;
 }

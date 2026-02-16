@@ -1,0 +1,24 @@
+p {
+    text-align: left;
+}
+
+h1 {
+    margin-bottom: 50px;
+    display: block;
+}
+
+button {
+    margin-right: 5px;
+    border-radius: 10px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.save {
+    border-radius: 2px;
+    margin-top: 20px;
+    color: white;
+    background-color: navy;
+}
